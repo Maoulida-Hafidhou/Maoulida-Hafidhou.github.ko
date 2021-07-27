@@ -1,0 +1,40 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ddd;
+}
+#caroussel{
+    width: 280px;
+    overflow: hidden;
+    border: 2px solid #333;
+}
+.images{
+    display: flex;
+    animation-duration: 10s;
+    animation-name: mesImages;
+    animation-iteration-count: infinite;
+
+}
+@keyframes mesImages{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-280px);
+
+    }
+    50%{
+        transform: translateX(-560px);
+
+    }
+    75%{
+        transform: translateX(-840px);
+
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
